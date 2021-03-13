@@ -25,11 +25,19 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run npm install and deploy
+      # Set Git config
+      - name: Set git config
         run: |
-          npm install
-          npm run deploy
+          git config --global user.email "kev.guo123@gmail.com"
+          git config --global user.name "Kevin Guo"
+
+      # Install packages
+      - name: Run npm install
+        run: npm install
+
+      # Publish site to master
+      - name: Deploy
+        run: npm run deploy
         
         
         
