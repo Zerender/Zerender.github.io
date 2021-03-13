@@ -31,7 +31,7 @@ jobs:
 
       # Gatsby build
       - name: Run npm build
-        run: npm build
+        run: npm run build
 
       # Deploy to master
       - name: Deploy 🚀
