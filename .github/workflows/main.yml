@@ -25,19 +25,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Set Git config
-      - name: Set git config
-        run: |
-          git config --global user.email "kev.guo123@gmail.com"
-          git config --global user.name "Kevin Guo"
-
       # Install packages
       - name: Run npm install
         run: npm install
 
-      # Publish site to master
-      - name: Deploy
-        run: npm run deploy
+      # Gatsby build
+      - name: Run Gatsby build
+        run: gatsby build --prefix-paths
+
+      # Deploy to master
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: master # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
         
         
         
