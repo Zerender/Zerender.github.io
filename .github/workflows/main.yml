@@ -29,16 +29,11 @@ jobs:
       - name: Run npm install
         run: npm install
 
-      # Gatsby build
-      - name: Run Gatsby build
-        run: gatsby build --prefix-paths
-
-      # Deploy to master
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+     - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: master # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
         
         
         
