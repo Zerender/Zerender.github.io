@@ -29,12 +29,17 @@ jobs:
       - name: Run npm install
         run: npm install
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      # Gatsby build
+      - name: Run npm build
+        run: npm build
+
+      # Deploy to master
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          
+          branch: master # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
+        
         
         
         
