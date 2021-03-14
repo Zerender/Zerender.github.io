@@ -12,7 +12,6 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
   const [colorMode, setColorMode] = useColorMode();
   var bgImage = colorMode === `dark` ? `background-hero.jpg` : `background-hero-light.jpg`;
   var arrowColor = colorMode === `dark` ? `icon_brightest` : `black`;
-  console.log(colorMode, bgImage);
   return  (
     <div>
       <Divider speed={0.2} offset={offset} factor={factor}>

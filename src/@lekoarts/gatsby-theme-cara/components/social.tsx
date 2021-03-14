@@ -25,7 +25,6 @@ const Social = ({...props}: SocialProps) => {
 	];
 	const [colorMode, setColorMode] = useColorMode();
 	const icons: JSX.Element[] = component.map((icon, index) => {
-		console.log(icon);
 		return (
 		<a
 			key={index}
