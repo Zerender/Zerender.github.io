@@ -2,6 +2,8 @@ require(`dotenv`).config({
   path: `.env`,
 })
 
+console.log(process.env.GOOGLE_ANALYTICS_ID);
+
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
