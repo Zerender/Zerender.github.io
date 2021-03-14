@@ -30,6 +30,9 @@ jobs:
         with:
           envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
+      - name: Create public folder for build output
+        run: mkdir public
+
       # Install packages
       - name: Run npm install
         run: npm install

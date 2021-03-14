@@ -4,8 +4,6 @@ import {
 	FaGithub,
 	FaLinkedinIn,
 	FaRegEnvelope,
-	FaYoutube,
-	FaTwitch,
 	FaMediumM,
 } from "react-icons/fa";
 
