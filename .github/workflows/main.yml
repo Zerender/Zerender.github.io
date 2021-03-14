@@ -1,5 +1,5 @@
-# This is a basic workflow to help you get started with Actions
-
+# This workflow to automatically build and deploy to GitHub Pages (master branch)
+# when code is pushed to the dev branch
 name: CI
 
 # Controls when the action will run. 
@@ -31,7 +31,7 @@ jobs:
           envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
       - name: Create public folder for build output
-        run: mkdir public
+        run: mkdir -p public
 
       # Install packages
       - name: Run npm install
