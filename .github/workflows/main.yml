@@ -28,9 +28,6 @@ jobs:
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
-      
-      - name: Does this work?
-        run: echo ${{ secrets.DOESNT_EXIST }}
 
       #This is required if public is in .gitignore, which it likely is
       - name: Create public folder for build output
