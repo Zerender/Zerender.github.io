@@ -4,21 +4,23 @@ import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import SVG from "@lekoarts/gatsby-theme-cara/src/components/svg"
-import { UpDown, UpDownWide } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
+import { UpDown, UpDownFast, UpDownWide } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
+import { useMediaQuery } from 'react-responsive';
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
+  const isPortrait = useMediaQuery({ orientation: 'portrait' });
   const [colorMode, setColorMode] = useColorMode();
   var bgImage = colorMode === `dark` ? `background-hero.jpg` : `background-hero-light.jpg`;
   var arrowColor = colorMode === `dark` ? `icon_brightest` : `black`;
   return  (
     <div>
       <Divider speed={0.2} offset={offset} factor={factor}>
-          <img src={ require('./images/' + bgImage) } style={{width: `100vw`, height: `auto`}}/>
-          <UpDown>
+          {!isPortrait ? <img src={ require('./images/' + bgImage) } style={{width: `100vw`, height: `auto`}}/> : ``}
+          <UpDownFast>
               <SVG icon="downArrowCircle" hiddenMobile width={160} color={arrowColor} left="50%" top="70%" />
-          </UpDown>
+          </UpDownFast>
       </Divider>
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
@@ -29,8 +31,8 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
         sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
         speed={0.2}
-        offset={1}
-        factor={factor}
+        offset={0.8}
+        factor={2}
       >
       </Divider>
     </div>
