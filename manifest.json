@@ -2,5 +2,6 @@
   "main.js": "render-page.js",
   "main.js.map": "render-page.js.map",
   "static/background-hero-light.jpg": "static/background-hero-light-adda539377e63984143815ca3ef419d0.jpg",
-  "static/background-hero.jpg": "static/background-hero-f2369b64877db9a1b8cf98e70144cc67.jpg"
+  "static/background-hero.jpg": "static/background-hero-f2369b64877db9a1b8cf98e70144cc67.jpg",
+  "static/rampround.png": "static/rampround-7b31b99a55d4e15e173cf0fd6b5f028d.png"
 }
