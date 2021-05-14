@@ -27,7 +27,7 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                 color: `white`, 
                 background: props.image ? `0% url(${require(`./images/` + props.image)}), ${props.bg}` : `${props.bg}`,
                 backgroundRepeat: `no-repeat`,
-                backgroundPosition: `92% 40%`,
+                backgroundPosition: `92% 50%`,
                 backgroundSize: `25%, cover`,
                 transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
                 "&:hover": {
