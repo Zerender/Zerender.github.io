@@ -4,10 +4,11 @@ import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import SVG from "@lekoarts/gatsby-theme-cara/src/components/svg"
-import { UpDown, UpDownFast, UpDownWide } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
+import { UpDownFast } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
-import { useMediaQuery } from 'react-responsive';
+// @ts-ignore
+import {useMediaQuery} from 'react-responsive';
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
   const isPortrait = useMediaQuery({ orientation: 'portrait' });

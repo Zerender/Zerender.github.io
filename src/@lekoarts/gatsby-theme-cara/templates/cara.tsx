@@ -5,6 +5,7 @@ import Hero from "@lekoarts/gatsby-theme-cara/src/components/hero";
 import Projects from "@lekoarts/gatsby-theme-cara/src/components/projects";
 import About from "@lekoarts/gatsby-theme-cara/src/components/about";
 import Contact from "@lekoarts/gatsby-theme-cara/src/components/contact";
+// @ts-ignore
 import { useMediaQuery } from 'react-responsive';
 
 const Cara = () => {
@@ -46,8 +47,6 @@ const Cara = () => {
       contact_factor = 1;
     }
 	}
-
-  console.log(about_factor);
 
 	return (
 	<Layout>
