@@ -8,7 +8,7 @@ import { UpDownFast } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
 // @ts-ignore
-import {useMediaQuery} from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
   const isPortrait = useMediaQuery({ orientation: 'portrait' });
