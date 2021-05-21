@@ -21,7 +21,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
       <Divider speed={0.2} offset={offset} factor={factor}>
           {!isPortrait ? <img src={ require('./images/' + bgImage) } style={{width: `100vw`, height: `auto`}}/> : ``}
           <UpDownFast>
-              <SVG icon="downArrowCircle" hiddenMobile width={160} color={arrowColor} left="50%" top="70%" />
+              <SVG icon="downArrowCircle" hiddenMobile width={120} color={arrowColor} left="50%" top="85%" />
           </UpDownFast>
       </Divider>
       <Content speed={0.4} offset={offset} factor={factor}>

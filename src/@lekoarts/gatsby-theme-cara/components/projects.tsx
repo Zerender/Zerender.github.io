@@ -21,7 +21,7 @@ const Projects = ({ offset, factor }: { offset: number; factor?: number }) => (
       <Inner>
         <div
           sx={{
-            display: `grid`,
+            display: `inline-grid`,
             gridGap: [2, 2, 2, 3],
             gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
             h2: { gridColumn: `-1/1`, color: `white !important` },

@@ -24,7 +24,7 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                 borderRadius: `lg`,
                 px: 4,
                 pt: [3, 4],
-                pb: [4, 5],
+                pb: [3, 4],
                 color: `white`, 
                 background: props.image ? `0% url(${require(`./images/` + props.image)}), ${props.bg}` : `${props.bg}`,
                 backgroundRepeat: `no-repeat`,
@@ -36,7 +36,8 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                     transform: `translateY(-5px)`,
                     boxShadow: `xl`,                                                                                                                                                                                                                                 
                 },
-                textShadow: `1px 1px 3px rgba(0, 0, 0, 0.8)`
+                textShadow: `1px 1px 3px rgba(0, 0, 0, 0.8)`,
+                opacity: 1
             }}
         >
             <div sx={{fontSize: [0, 1]}}>{props.children}</div>
@@ -46,7 +47,7 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                 pt: 4,
                 fontSize: [3, 4],
                 fontWeight: `medium`,
-                lineHeight: 0,
+                lineHeight: 1,
             }}
             >
             {props.title}
