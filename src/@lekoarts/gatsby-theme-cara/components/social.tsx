@@ -15,11 +15,12 @@ type SocialProps = {
   }
 
 const Social = ({...props}: SocialProps) => {
+	const size = '4em';
 	const component: [JSX.Element, string][] = [
-		[<FaRegEnvelope sx={{height:`3em`, width:`3em`}}/>, props.email],
-		[<FaGithub sx={{height:`3em`, width:`3em`}}/>, props.github],
-		[<FaLinkedinIn sx={{height:`3em`, width:`3em`}}/>, props.linkedin],
-		[<FaMediumM sx={{height:`3em`, width:`3em`}}/>, props.medium],
+		[<FaRegEnvelope sx={{height:size, width:size}}/>, props.email],
+		[<FaGithub sx={{height:size, width:size}}/>, props.github],
+		[<FaLinkedinIn sx={{height:size, width:size}}/>, props.linkedin],
+		[<FaMediumM sx={{height:size, width:size}}/>, props.medium],
 	];
 	const [colorMode, setColorMode] = useColorMode();
 	const icons: JSX.Element[] = component.map((icon, index) => {

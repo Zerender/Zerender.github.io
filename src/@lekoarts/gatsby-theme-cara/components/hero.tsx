@@ -4,6 +4,7 @@ import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import SVG from "@lekoarts/gatsby-theme-cara/src/components/svg"
+// @ts-ignore
 import { UpDownFast } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"

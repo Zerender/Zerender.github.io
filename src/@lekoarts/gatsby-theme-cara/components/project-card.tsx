@@ -23,7 +23,8 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                 textDecoration: `none`,
                 borderRadius: `lg`,
                 px: 4,
-                py: [4, 5],
+                pt: [3, 4],
+                pb: [4, 5],
                 color: `white`, 
                 background: props.image ? `0% url(${require(`./images/` + props.image)}), ${props.bg}` : `${props.bg}`,
                 backgroundRepeat: `no-repeat`,
@@ -42,9 +43,9 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
             sx={{
                 letterSpacing: `wide`,
                 pt: 4,
-                fontSize: [4, 5],
+                fontSize: [3, 4],
                 fontWeight: `medium`,
-                lineHeight: 1,
+                lineHeight: 0,
             }}
             >
             {props.title}
