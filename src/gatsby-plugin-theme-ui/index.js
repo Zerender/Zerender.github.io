@@ -37,7 +37,7 @@ const theme = merge(tailwind, {
     },
   },
   fontSizes: [
-    `0.9em`, `1em`, `1.1em`, `1.25em`, `1.85em`, `2.5em`, `3em`, `3.75em`, `4.5em`
+    `0.85em`, `1em`, `1.1em`, `1.25em`, `1.85em`, `2.5em`, `3em`, `3.75em`, `4.5em`
   ],
   breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
   footer: {
@@ -55,8 +55,8 @@ const theme = merge(tailwind, {
       padding: 0,
       boxSizing: `border-box`,
       textRendering: `optimizeLegibility`,
-      WebkitFontSmoothing: `antialiased`,
-      MozOsxFontSmoothing: `grayscale`,
+      WebkitFontSmoothing: `auto`,
+      MozOsxFontSmoothing: `auto`,
       color: `text`,
       backgroundColor: `background`,
       a: {
@@ -71,7 +71,7 @@ const theme = merge(tailwind, {
     },
     p: {
       fontSize: [1, 2],
-      letterSpacing: `-0.003em`,
+      letterSpacing: `0.002em`,
       lineHeight: `body`,
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,

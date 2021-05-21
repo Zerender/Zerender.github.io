@@ -36,9 +36,10 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                     transform: `translateY(-5px)`,
                     boxShadow: `xl`,                                                                                                                                                                                                                                 
                 },
+                textShadow: `1px 1px 3px rgba(0, 0, 0, 0.8)`
             }}
         >
-            <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{props.children}</div>
+            <div sx={{fontSize: [0, 1]}}>{props.children}</div>
             <div
             sx={{
                 letterSpacing: `wide`,
