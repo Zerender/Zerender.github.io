@@ -37,7 +37,7 @@ const theme = merge(tailwind, {
     },
   },
   fontSizes: [
-    `0.85em`, `1em`, `1.1em`, `1.25em`, `1.85em`, `2.5em`, `2.75em`, `3.5em`, `4em`
+    `0.85em`, `1em`, `1.075em`, `1.25em`, `1.85em`, `2.5em`, `2.75em`, `3.5em`, `4em`
   ],
   breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
   footer: {
@@ -54,7 +54,7 @@ const theme = merge(tailwind, {
       margin: 0,
       padding: 0,
       boxSizing: `border-box`,
-      textRendering: `geometricPrecision`,
+      textRendering: `auto`,
       WebkitFontSmoothing: `auto`,
       MozOsxFontSmoothing: `auto`,
       color: `text`,

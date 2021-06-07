@@ -18,7 +18,7 @@ const InnerWave = styled.div`
 
 const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
-    <Divider fill="divider" speed={0.2} offset={offset} factor={factor}>
+    <Divider fill="#bd6c7e" speed={0.2} offset={offset} factor={factor}>
       <div sx={{ position: `absolute`, bottom: 0, width: `full`, transform: `matrix(1, 0, 0, -1, 0, 0)` }}>
         <InnerWave sx={{ position: `relative`, height: `full`, svg: { width: `100%`, height: `40vh` } }}>
           <svg xmlns="http://www.w3.org/2000/svg" id="contact-wave" viewBox="0 0 800 338.05" preserveAspectRatio="none">

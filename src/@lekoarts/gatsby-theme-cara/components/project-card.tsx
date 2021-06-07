@@ -36,7 +36,7 @@ const ProjectCard = ({...props}: ProjectCardProps) => {
                     transform: `translateY(-5px)`,
                     boxShadow: `xl`,                                                                                                                                                                                                                                 
                 },
-                textShadow: `1px 1px 3px rgba(0, 0, 0, 0.8)`,
+                textShadow: `1px 1px 1px rgba(0, 0, 0, 0.7 )`,
                 opacity: 1
             }}
         >
